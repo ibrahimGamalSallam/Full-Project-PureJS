@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="crud">
+    <div class="head">
+        <h2>CRUDS</h2>
+        <h3>Product Management System</h3>
+    </div>
+
+<div class="inputs">
+    <input id="title" type="text" placeholder="Title">
+    <div class="priceField">
+        <!-- type="text" inputmode="numeric" for disabling arows in input field -->
+        <input id="price" onkeyup="sum()" type="text" inputmode="numeric" placeholder="Price">
+        <input id="taxes" onkeyup="sum()" type="text" inputmode="numeric" placeholder="Taxes">
+        <input id="ads" onkeyup="sum()" type="text" inputmode="numeric" placeholder="Ads">
+        <input id="discount" onkeyup="sum()" type="text" inputmode="numeric" placeholder="Discount">
+        <small id="total"></small>
+    </div>
+
+    <input id="count" type="text" placeholder="Count">
+    <input id="category" type="text" placeholder="Category">
+    <button id="create">Create</button>
+</div>
+<div class="outputs">
+    <div class="searchBlock">
+    <input id="search" onkeyup="searchProduct(this.value)" type="text" placeholder="Search">
+        <div class="searchButton">
+            <button id="searchTitle" onclick="SearchButton(this.id)">Search by Title</button>
+            <button id="searchCategory" onclick="SearchButton(this.id)">Search by Category</button>
+        </div>
+    </div>
+
+<div id="deleteAll">
+</div>
+
+    <table>
+        <tr>
+            <th>id</th>
+            <th>Title</th>
+            <th>Price</th>
+            <th>Taxes</th>
+            <th>Ads</th>
+            <th>Discount</th>
+            <th>Total</th>
+            <th>Category</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
+
+        <tbody id="tableBody">
+        </tbody>
+    </table>
+    
+    </div>
+
+
+</div>
+    <script src="main.js"></script>
+    
+</body>
+</html>

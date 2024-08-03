@@ -1,0 +1,94 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background: black;
+    color:white;
+    text-align: center;
+}
+
+.crud{
+    width: 80%;
+    margin: auto;
+}
+
+input{
+    width: 100%;
+    background-color: #111;
+    margin: 4px 0;
+    height: 30;
+    border-radius: 4px;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    padding: 4px;
+}
+input:focus{
+    background-color: #0e0d0d;
+    transform: scale(1.1);
+}
+
+/*disable arrows in input keys as function works onkeyup only
+
+/* Chrome, Safari, Edge, Opera */
+/* input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+} */
+
+/* Firefox */
+/* input[type=number] {
+  -moz-appearance: textfield;
+} */
+
+.priceField input{
+    width: 20%;
+    margin: 10px ;
+}
+
+#total{
+    background-color: red;
+    padding: 2px;
+    border-radius: 5px;
+}
+#total::before{
+    content: "Total: ";
+}
+
+button{
+    width: 80%;
+    height: 40;
+    background-color: purple;
+    color: white;
+    border-radius: 20px;
+    margin: 4px;
+    border: none;
+    transition: 0.3s;
+}
+button:hover{
+    background-color: #b800ebc4;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+}
+.searchButton{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.searchButton button{
+    width: 45%;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+table th{
+    text-transform: uppercase;
+}
